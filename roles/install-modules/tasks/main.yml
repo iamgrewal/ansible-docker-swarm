@@ -2,8 +2,11 @@
 - name: Install Packages
   apt: name={{ item }} state=latest update_cache=yes
   with_items:
+    - software-properties-common
     - ntp
-    - python
+    - python3
+    - pytho3-pip
+    - python-is-python3
     - tcpdump
     - wget
     - openssl
